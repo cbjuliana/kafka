@@ -1,0 +1,22 @@
+PS C:\kafka> .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+PS C:\kafka> .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+PS C:\kafka> .\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic LOJA_NOVO_PEDIDO
+
+PS C:\kafka> .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092 LOJA_NOVO_PEDIDO
+
+PS C:\kafka> .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic LOJA_NOVO_PEDIDO
+
+PS C:\kafka> .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic LOJA_NOVO_PEDIDO
+
+PS C:\kafka>  .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic LOJA_NOVO_PEDIDO --from-beginning
+
+
+
+
+
+
+
+
+
