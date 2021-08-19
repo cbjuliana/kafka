@@ -14,6 +14,8 @@ PS C:\kafka>  .\bin\windows\kafka-console-consumer.bat --bootstrap-server localh
 
 PS C:\kafka> .\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --describe
 
+PS C:\kafka> .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic ECOMMERCE_NEW_ORDER --from-beginning
+
 
 
 
