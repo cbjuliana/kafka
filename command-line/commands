@@ -16,6 +16,8 @@ PS C:\kafka> .\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --
 
 PS C:\kafka> .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic ECOMMERCE_NEW_ORDER --from-beginning
 
+PS C:\kafka> .\bin\windows\kafka-topics.bat --alter --zookeeper localhost:2181 --topic ECOMMERCE_NEW_ORDER --partitions 3
+
 
 
 
