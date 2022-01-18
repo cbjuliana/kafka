@@ -2,8 +2,8 @@ package com.example.kafka.ecommerce;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
-public interface ConsumerFunction {
+public interface ConsumerFunction<T> {
 	
-	void consume(ConsumerRecord<String, String> record);
+	void consume(ConsumerRecord<String, T> record);
 
 }
